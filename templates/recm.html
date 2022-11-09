@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/style1.css" />
+    <title>StatForSpotify|Recommendations</title>
+  </head>
+
+  <body>
+    <section class="text-center">
+      <div class="container">
+        <div class="navbar"> 
+            <h2>Recommendations</h2>
+            <div class="buttons">
+
+                <input
+                type="button"
+                onclick="window.location.href='http://127.0.0.1:5000/search';"
+                id="loginbtn"
+                value="Search"
+                />
+                <input
+                type="button"
+                onclick="window.location.href='https://www.spotify.com/logout/';"
+                id="loginbtn"
+                value="Logout"
+                />
+            </div>
+        </div> 
+
+
+        <div class="row">
+        {% for so,art,i1,i2,i3 in arrr %}
+         
+            <div class="card">
+                
+              <img src={{i2}} src2={{i1}}alt={{so}} />
+              <h3 class="title">{{so}}</h3>
+              <p class="text">{{art}}</p>
+
+            </div>
+            {% endfor %}
+        </div>
+  
+  </body>
+</html>
+
+
+

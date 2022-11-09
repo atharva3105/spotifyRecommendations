@@ -1,0 +1,6 @@
+setup.py
+StatForSpotify.egg-info/PKG-INFO
+StatForSpotify.egg-info/SOURCES.txt
+StatForSpotify.egg-info/dependency_links.txt
+StatForSpotify.egg-info/requires.txt
+StatForSpotify.egg-info/top_level.txt
